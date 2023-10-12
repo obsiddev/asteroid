@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textdatei herunterladen</title>
+</head>
+<body>
+    <h1>Textdatei herunterladen</h1>
+
+    <input type="text" id="textfeld" placeholder="Geben Sie Ihren Text ein">
+    <button id="downloadButton">Herunterladen</button>
+
+    <script>
+        document.getElementById("downloadButton").addEventListener("click", function() {
+            var textInhalt = document.getElementById("textfeld").value;
+            
+            var blob = new Blob([textInhalt], { type: "text/plain" });
+            var a = document.createElement("a");
+            a.download = "asteroid-"+new Date() + ".txt";
+            a.href = window.URL.createObjectURL(blob);
+            a.style.display = "none";
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(a.href);
+            document.body.removeChild(a);
+        });
+    </script>
+</body>
+</html>

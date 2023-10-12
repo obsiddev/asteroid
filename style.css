@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+body {
+    background-color: #000;
+    color: #aaa;
+    font-family: "Gabarito", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+
+header {
+    background-color: #111;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.asteroidtitle {
+    color: #ff5757;
+    display: inline;
+    margin-right: 20px;
+}
+
+.tabitem {
+    cursor: pointer;
+    text-align: center;
+    display: inline;
+    color: #aaa;
+    padding: 10px;
+    transition: all 100ms ease;
+}
+
+.tabitem:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.tabitem:active {
+    background-color: #444;
+}
+
+::selection {
+    font-stretch: normal;
+}
+
+.maineditor {
+    overflow: scroll;
+    height: calc(100vh - 85px);
+    padding: 10px;
+    margin: 10px;
+    background-color: #111;
+    outline: none;
+    border-top: #444 1px solid;
+    color: #aaa;
+}
+
+.maineditor:focus {
+    border-top: #ff5757 1px solid;
+    cursor: text;
+}
+
+.maineditor::selection {
+    color: #fff;
+    background-color: #ff5757;
+}
+
+.downloadbtn {
+    font-family: "Gabarito", sans-serif;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+    padding: 10px;
+    color: #ff5757;
+    transition: all 100ms ease;
+}
+
+.downloadbtn:hover {
+    background-color: #222;
+}
+
+.downloadbtn:active {
+    background-color: #444;
+    color: #fff;
+}
+
+.filename {
+    cursor: text;
+    position: fixed;
+    font-family: "Gabarito", sans-serif;
+    top: 0px;
+    right: 96.5334px;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0px;
+    transition: all 100ms ease;
+    color: #aaa;
+    background-color: #171717;
+    outline: none;
+    border: none;
+}
+
+.filename::selection {
+    color: #fff;
+    background-color: #ff5757;
+}
+
+.filename:placeholder-shown {
+    color: #444;
+    font-style: italic;
+}
+
+.filename:focus {
+    background-color: #222;
+    color: #fff;
+}
