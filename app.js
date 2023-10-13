@@ -35,6 +35,15 @@ function returnCookie(name) {
     }
 }
 
+function tts() {
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = document.getElementById("maineditor").innerText;
+    var voices = window.speechSynthesis.getVoices();
+    msg.lang = "de-AT"
+    window.speechSynthesis.speak(msg);
+
+}
+
 function download() {
     var content = document.getElementById("maineditor").innerText;
     

@@ -64,34 +64,12 @@ header {
     color: #fff;
     background-color: #ff5757;
 }
-
-.downloadbtn {
-    font-family: "Gabarito", sans-serif;
-    cursor: pointer;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    font-size: 18px;
-    padding: 10px;
-    color: #ff5757;
-    transition: all 100ms ease;
-}
-
-.downloadbtn:hover {
-    background-color: #222;
-}
-
-.downloadbtn:active {
-    background-color: #444;
-    color: #fff;
-}
-
 .filename {
     cursor: text;
     position: fixed;
     font-family: "Gabarito", sans-serif;
     top: 0px;
-    right: 96.5334px;
+    right: 10px;
     width: 200px;
     font-size: 18px;
     padding: 10px;
