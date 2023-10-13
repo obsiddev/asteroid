@@ -95,3 +95,54 @@ header {
     background-color: #222;
     color: #fff;
 }
+
+
+.dropdown {
+    display: inline;
+}
+
+.dropdownbtn {
+    display: inline;
+    position: relative;
+    color: #aaa;
+    padding: 10px;
+    transition: all 200ms ease;
+    background-color: #111;
+    cursor: pointer;
+}
+
+.dropmenu {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    background-color: #111;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.dropdownbtn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.dropdown:hover .dropmenu {
+    display: block;
+}
+
+.dropoption {
+    display: block;
+    padding: 10px;
+    color: #aaa;
+    transition: all 200ms ease;
+    background-color: #111;
+}
+
+.dropoption:hover {
+    color: #fff;
+    background-color: #222;
+    
+}
+
+.dropoption:active {
+    background-color: #444;
+}

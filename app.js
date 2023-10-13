@@ -41,7 +41,6 @@ function tts() {
     var voices = window.speechSynthesis.getVoices();
     msg.lang = "de-AT"
     window.speechSynthesis.speak(msg);
-
 }
 
 function download() {
