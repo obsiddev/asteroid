@@ -43,14 +43,15 @@ function tts() {
     window.speechSynthesis.speak(msg);
 }
 
+function clearfile() {
+    document.getElementById("maineditor").innerHTML = ""
+}
+
 function download() {
     var content = document.getElementById("maineditor").innerText;
     
     var blob = new Blob([content], { type: "text/plain" });
     var a = document.createElement("a");
-    if(document.getElementById("filename").value == "") {
-        a.download = "asteroid-new-file.txt";
-    }
     a.download = document.getElementById("filename").value + ".txt";
     a.href = window.URL.createObjectURL(blob);
     a.style.display = "none";
@@ -58,6 +59,15 @@ function download() {
     a.click();
     window.URL.revokeObjectURL(a.href);
     document.body.removeChild(a);
+}
+
+function copy() {
+    navigator.clipboard.writeText(document.getElementById("maineditor").innerHTML);
+}
+
+//not working
+function paste() {
+    document.getElementById("maineditor").innerHTML = navigator.clipboard.read;
 }
 
 //site technic

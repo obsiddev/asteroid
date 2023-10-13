@@ -9,17 +9,28 @@
 <body>
     <header>
         <div class="asteroidtitle">asteroid</div>
-        <div class="tabitem">file</div>
-        <div class="tabitem">edit</div>
-        <div class="tabitem">help</div>
-        <div onclick="download()"class="tabitem">download</div>
-        <div onclick="tts()"class="tabitem">tts</div>
         <div class="dropdown">
-            <div class="dropdownbtn">test dropdown
+            <div class="dropdownbtn">file
                 <div class="dropmenu">
-                    <div class="dropoption">yes</div>
-                    <div class="dropoption">no</div>
-                    <div class="dropoption">longtext</div>
+                    <div onclick="clearfile()" class="dropoption">new</div>
+                    <div onclick="download()" class="dropoption">save</div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdownbtn">edit
+                <div class="dropmenu">
+                    <div class="dropoption">settings</div>
+                    <div onclick="copy()" class="dropoption">copy document to clipboard</div>
+                    <div onclick="tts()" class="dropoption">start tts</div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdownbtn">help
+                <div class="dropmenu">
+                    <div class="dropoption">help</div>
+                    <div class="dropoption">about</div>
                 </div>
             </div>
         </div>
