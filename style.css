@@ -17,7 +17,7 @@ header {
 }
 
 .asteroidtitle {
-    color: #ff5757;
+    color: #c157ff;
     display: inline;
     margin-right: 20px;
 }
@@ -56,13 +56,13 @@ header {
 }
 
 .maineditor:focus {
-    border-top: #ff5757 1px solid;
+    border-top: #c157ff 1px solid;
     cursor: text;
 }
 
 .maineditor::selection {
     color: #fff;
-    background-color: #ff5757;
+    background-color: #c157ff;
 }
 .filename {
     cursor: text;
@@ -83,7 +83,7 @@ header {
 
 .filename::selection {
     color: #fff;
-    background-color: #ff5757;
+    background-color: #c157ff;
 }
 
 .filename:placeholder-shown {
